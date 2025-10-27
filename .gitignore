@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+CNVkit_outputs/
+plots/
+outputs/
