@@ -220,6 +220,25 @@ p=ggplot(dtCNAs, aes(x = cohort, y = nCNAs)) +
 print(p)
 dev.off()
 
+## Fraction of genome altered per sample (mouse genome size ~ 2.7Gb)
+wgii <- CNVprofiles %>% mutate(length=end-start) %>% filter(cn!=2) %>% group_by(sample) %>% summarise(wgii=sum(length/2.7e9))
+wgii$cohort="TP53ko mice"
+
+png(file=paste0(PLOTS_DIR, "/BoxPlot_FGA.png"), width = 80/25.4, height = 100/25.4, units = "in", res = 300)
+p=ggplot(wgii, aes(x = cohort, y = wgii)) + 
+    geom_boxplot(outlier.shape = NA) +
+    geom_point(aes(fill = sample), pch = 21, position = position_jitter(0.2), alpha = 1) +
+    xlab("") + ylab("Fraction of genome altered") +
+    scale_y_continuous(trans='log10') +
+    labs(title="TP53-ko colitis-CRC model (n=25)",
+         subtitle = "")+
+    theme(text = element_text(size = 7),
+          axis.text = element_text(size = 6),
+          axis.line = element_line(size = 0.5), 
+          axis.ticks = element_line(size = 0.5),
+          axis.ticks.length = unit(.1, "cm"))
+print(p)
+dev.off()
 
 # what is the CNAs in human data?
 Din.data=fread(file.path(dirname(BASE), "extdata/Din_2018.txt"))
