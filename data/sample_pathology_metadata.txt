@@ -1,0 +1,27 @@
+Sanger_label	Histological_grade	Pathology_annotations	DOB	DOInduction	DOCull	Days_Cull_induction	Days_Cull_age	Days_Cull_DNAextraction	Sampling_details	Samples
+MD7028a	Invasive - mucinous	Partly mucinous invasive adenocarcinoma (pT1)	03/08/2020	03/09/2020	14/04/2021	223	254	110	LI 11cm (3x3 - CB/RNAL, 2x2 - PFA). Nil on meth. SI 45cm - no SI tium	LI and LITUM for CB, SI, LI, LI TUM for RNAL
+MD7029a	Invasive	Moderately differentiated adenocarcinoma arising in HGD adenoma. Invasive (pT1) 	03/08/2020	03/09/2020	14/04/2021	223	254	110	9cm LI (3x4, 3x3 PFA). Meth 5(3x3), 2(2x2). SI 44cm - 2x2, 2(1x1)	LI and LITUM for CB, SI, LI, LI TUM for RNAL
+MD7030a	Invasive	Moderately differentiated adenocarcinoma arising in HGD adenoma. Invasive (pT3) 	03/08/2020	03/09/2020	14/04/2021	223	254	110	LI not meausred. 5x4 - PFA, 2(0.5*0.5). SI 42cm (4x3, 1x1)	LI and LITUM for CB, SI, SITUM, LI, LI TUM for RNAL
+MD7031a	Invasive	Adenoma with focal invasion invasive into submucosa at least adenoca (pt1)								
+MD7031c	Invasive - mucinous 	Adenoma but deep to it is mucinous invasive adeno ca								
+MD7031d	?	Not seen on this slide								
+MD7031e	Invasive	Invasive adenoca with small focus of invasion								
+MD7031f	HGD	Adenoma with HGD								
+MD7032a	Invasive 	Pt3 Invasive adneoca								
+MD7032c	HGD	HGD adenoma								
+MD7033a	Invasive - mucinous	Mucinous adneoca with invasion into muscle. pT2	15/09/2020	25/11/2020	09/06/2021	196	267	54	LI 9cm (6x6 - PFA), 3x3, 1x1. SI 49cm. 3x3	LI /SI Meth, Orgs incl thymus > PFA. LN > PFA. Tum >PFA. LI and LITUM for RNAL
+MD7033c	HGD	Adenoma hgd next to anal canal								
+MD7034a	Invasive	Moderately differentiated adenocarcinoma breaching serosa - pT4	15/09/2020	25/11/2020	09/06/2021	196	267	54	LI 8.5cm (4x3). SI 44cm (3(2x2), 4(1x1))	LI /SI Meth, Orgs incl thymus > PFA. LN > PFA. LI and LITUM for RNAL
+MD7035d	HGD	ovoid adneomas with HGD								
+MD7035e	Invasive	mostly adenoma but invasion into submucosa (pt1)								
+MD7035a	Invasive	invasive adenoca pt1 arising from adenoma								
+MD7035c	Invasive	invasive adenoca pt1 arising from adenoma								
+MD7036a	HGD	Adenoma with no invasion. Mostly LGD with focal HGD	18/09/2020	25/11/2020	09/06/2021	196	264	54	LI 8.5cm (5x4 PFA, 1x1 meth. SI 46cm (2(2x2)). 	LI /SI Meth, Orgs incl thymus > PFA. LN > PFA. Tum >PFA. LI and LITUM for RNAL
+MD7037c	HGD	Adenoma with HGD								
+MD7037a	Invasive	Moderately differentiated adenocarcinoma with early invasion (pT1)								
+MD7038d	HGD	Adenoma mostly lgd with focus of hgd								
+MD7038c	Invasive	suspicious for early invasion mostly hgd adenoma								
+MD7038a	HGD	ovoid adenoma with hgd								
+MD7039a	Invasive - mucinous	Moderately differentiated mucinous adenocarcinoma with invasion breaching serosa (pT4)	18/09/2020	25/11/2020	24/05/2021	180	248	70	7.5 cm colon. Tumour 5x4 - invasive, PFA +2(1x1). SI 23+6cm? Intuss/tumour mass. 10x8 - PFA INV, 6x4 meth INV. 	
+MD7040c	Invasive	Adenoma with HGD with invasion into stalk - pt1 (polyp)								
+MD7040a	HGD	HGD adenoma. Cant see stalk								
