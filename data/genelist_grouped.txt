@@ -1,0 +1,49 @@
+pathway_groups = {
+    "DNA Repair / MMR": [
+        "Mlh1", "Msh2", "Msh6", "Pms2", "Mutyh", "Pole", "Pold1", "Brca1", "Brca2", "Atm", "Atr", "Chek2"
+    ],
+    "TP53 Pathway": [
+        "Trp53", "Trp73", "Trp63", "Mdm2", "Mdm4", "Cdkn1a", "Cdkn2a", "Rb1", "Bax", "Bak1", "Bcl2"
+    ],
+    "RAS/RAF/PI3K": [
+        "Kras", "Braf", "Pik3ca", "Pten", "Akt1", "Akt2", "Mtor", "Nrg1", "Dock2", "Spp1"
+    ],
+    "TGF-beta / SMAD": [
+        "Smad2", "Smad3", "Smad4", "Tgfbr2"
+    ],
+    "Wnt Signaling": [
+        "Apc", "Ctnnb1", "Axin1", "Axin2", "Rnf43", "Znrf3", "Lgr5", "Dkk1", "Dkk2", "Dkk3", "Dkk4",
+        "Wnt1", "Wnt2", "Wnt2b", "Wnt3", "Wnt3a", "Wnt4", "Wnt5a", "Wnt5b", "Wnt6", "Wnt7a", "Wnt7b",
+        "Wnt8a", "Wnt8b", "Wnt9a", "Wnt9b", "Wnt10a", "Wnt10b", "Wnt11", "Wnt16",
+        "Fzd1", "Fzd2", "Fzd3", "Fzd4", "Fzd5", "Fzd6", "Fzd7", "Fzd8", "Fzd9", "Fzd10",
+        "Lrp5", "Lrp6", "Gsk3b", "Csnk1a1", "Csnk1d", "Csnk1e", "Tcf7", "Tcf7l1", "Tcf7l2", "Lef1",
+        "Sfrp1", "Sfrp2", "Sfrp3", "Sfrp4", "Sfrp5", "Rspo1", "Rspo2", "Rspo3", "Rspo4", "Tnks", "Tnks2",
+        "Myc", "Ccnd1", "Mmp7", "Cd44", "Fbxw7"
+    ],
+    "Chromatin / Epigenetic": [
+        "Arid1a", "Ezh2", "Kmt2c", "Kmt2d", "Dnmt3a"
+    ],
+    "RTK / Growth Signals": [
+        "Erbb2", "Met", "Fgfr1", "Fgfr2"
+    ],
+    "Notch": [
+        "Notch1", "Notch2"
+    ],
+    "Cell Cycle": [
+        "Ccnd1", "Cdk4", "Cdk6"
+    ],
+    "EMT / Invasion": [
+        "Snai1", "Snai2", "Zeb1", "Zeb2", "Twist1", "Cdh1", "Mmp9", "Cxcr4", "S100a4"
+    ],
+    "Metabolism": [
+        "Idh1", "Sdhb"
+    ],
+    "Cytokine signalling": [
+        "Il16", "Il13ra1"
+    ],
+    "Robles 2016": [
+        "Trp53", "Kras", "Smad4", "Smad2", "Sox9", "Pik3ca", "Mtor", "Prex2", "Apc", "Ep300", "Trrap",
+        "Ubr5", "Ctnnd2", "Ptprf", "Radil", "Dock2", "Dock3", "Dscaml1", "Nrg1", "Tpo", "Il16", "Rims2",
+        "Cacna1d", "Srrm4", "Csmd2", "Csmd3", "Tut7", "Rrbp1"
+    ]
+}
