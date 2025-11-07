@@ -1,0 +1,148 @@
+human_name	mouse_name	pathway
+AKT1	Akt1	RAS/RAF/PI3K
+AKT2	Akt2	RAS/RAF/PI3K
+APC	Apc	Wnt Signaling
+ARID1A	Arid1a	Chromatin/Epigenetic
+ATM	Atm	DNA Repair/MMR
+ATR	Atr	DNA Repair/MMR
+AXIN1	Axin1	Wnt Signaling
+AXIN2	Axin2	Wnt Signaling
+BAK1	Bak1	TP53 Pathway
+BAX	Bax	TP53 Pathway
+BCL2	Bcl2	TP53 Pathway
+BRAF	Braf	RAS/RAF/PI3K
+BRCA1	Brca1	DNA Repair/MMR
+BRCA2	Brca2	DNA Repair/MMR
+CACNA1D	Cacna1d	
+CCND1	Ccnd1	Cell Cycle
+CD44	Cd44	Wnt Signaling
+CDH1	Cdh1	EMT/Invasion
+CDK4	Cdk4	Cell Cycle
+CDK6	Cdk6	Cell Cycle
+CDKN1A	Cdkn1a	TP53 Pathway
+CDKN2A	Cdkn2a	TP53 Pathway
+CHEK2	Chek2	DNA Repair/MMR
+CSMD2	Csmd2	
+CSMD3	Csmd3	
+CSNK1A1	Csnk1a1	Wnt Signaling
+CSNK1D	Csnk1d	Wnt Signaling
+CSNK1E	Csnk1e	Wnt Signaling
+CTNNB1	Ctnnb1	Wnt Signaling
+CTNNB2	Ctnnb2	
+CXCR4	Cxcr4	EMT/Invasion
+DKK1	Dkk1	Wnt Signaling
+DKK2	Dkk2	Wnt Signaling
+DKK3	Dkk3	Wnt Signaling
+DKK4	Dkk4	Wnt Signaling
+DNMT3A	Dnmt3a	Chromatin/Epigenetic
+DOCK2	Dock2	RAS/RAF/PI3K
+DOCK3	Dock3	
+DSCAML1	Dscaml1	
+EP300	Ep300	
+ERBB2	Erbb2	RTK/Growth Signals
+EZH2	Ezh2	Chromatin/Epigenetic
+FBXW7	Fbxw7	Wnt Signaling
+FGFR1	Fgfr1	RTK/Growth Signals
+FGFR2	Fgfr2	RTK/Growth Signals
+FZD1	Fzd1	Wnt Signaling
+FZD10	Fzd10	Wnt Signaling
+FZD2	Fzd2	Wnt Signaling
+FZD3	Fzd3	Wnt Signaling
+FZD4	Fzd4	Wnt Signaling
+FZD5	Fzd5	Wnt Signaling
+FZD6	Fzd6	Wnt Signaling
+FZD7	Fzd7	Wnt Signaling
+FZD8	Fzd8	Wnt Signaling
+FZD9	Fzd9	Wnt Signaling
+GSK3B	Gsk3b	Wnt Signaling
+IDH1	Idh1	Metabolism
+IL13RA1	Il13ra1	Cytokine signalling
+IL16	Il16	Cytokine signalling
+KMT2C	Kmt2c	Chromatin/Epigenetic
+KMT2D	Kmt2d	Chromatin/Epigenetic
+KRAS	Kras	RAS/RAF/PI3K
+LEF1	Lef1	Wnt Signaling
+LGR5	Lgr5	Wnt Signaling
+LRP5	Lrp5	Wnt Signaling
+LRP6	Lrp6	Wnt Signaling
+MDM2	Mdm2	TP53 Pathway
+MDM4	Mdm4	TP53 Pathway
+MET	Met	RTK/Growth Signals
+MLH1	Mlh1	DNA Repair/MMR
+MMP7	Mmp7	Wnt Signaling
+MMP9	Mmp9	EMT/Invasion
+MSH2	Msh2	DNA Repair/MMR
+MSH6	Msh6	DNA Repair/MMR
+MTOR	Mtor	RAS/RAF/PI3K
+MUTYH	Mutyh	DNA Repair/MMR
+MYC	Myc	Wnt Signaling
+NOTCH1	Notch1	Notch
+NOTCH2	Notch2	Notch
+NRG1	Nrg1	RAS/RAF/PI3K
+PIK3CA	Pik3ca	RAS/RAF/PI3K
+PMS2	Pms2	DNA Repair/MMR
+POLD1	Pold1	DNA Repair/MMR
+POLE	Pole	DNA Repair/MMR
+PREX2	Prex2	
+PTEN	Pten	RAS/RAF/PI3K
+PTPRF	Ptprf	
+RADIL	Radil	
+RB1	Rb1	TP53 Pathway
+RIMS2	Rims2	
+RNF43	Rnf43	Wnt Signaling
+RRBP1	Rrbp1	
+RSPO1	Rspo1	Wnt Signaling
+RSPO2	Rspo2	Wnt Signaling
+RSPO3	Rspo3	Wnt Signaling
+RSPO4	Rspo4	Wnt Signaling
+S100A4	S100a4	EMT/Invasion
+SDHB	Sdhb	Metabolism
+SFRP1	Sfrp1	Wnt Signaling
+SFRP2	Sfrp2	Wnt Signaling
+SFRP3	Frzb	Wnt Signaling
+SFRP4	Sfrp4	Wnt Signaling
+SFRP5	Sfrp5	Wnt Signaling
+SMAD2	Smad2	TGF-beta/SMAD
+SMAD3	Smad3	TGF-beta/SMAD
+SMAD4	Smad4	TGF-beta/SMAD
+SNAI1	Snai1	EMT/Invasion
+SNAI2	Snai2	EMT/Invasion
+SOX9	Sox9	
+SPP1	Spp1	RAS/RAF/PI3K
+SRRM4	Srrm4	
+TCF7	Tcf7	Wnt Signaling
+TCF7L1	Tcf7l1	Wnt Signaling
+TCF7L2	Tcf7l2	Wnt Signaling
+TGFBR2	Tgfbr2	TGF-beta/SMAD
+TNKS	Tnks	Wnt Signaling
+TNKS2	Tnks2	Wnt Signaling
+TP53	Trp53	TP53 Pathway
+TP63	Trp63	TP53 Pathway
+TP73	Trp73	TP53 Pathway
+TPO	Tpo	
+TRRAP	Trrap	
+TUT7	Tut7	
+TWIST1	Twist1	EMT/Invasion
+UBR5	Ubr5	
+WNT1	Wnt1	Wnt Signaling
+WNT10A	Wnt10a	Wnt Signaling
+WNT10B	Wnt10b	Wnt Signaling
+WNT11	Wnt11	Wnt Signaling
+WNT16	Wnt16	Wnt Signaling
+WNT2	Wnt2	Wnt Signaling
+WNT2B	Wnt2b	Wnt Signaling
+WNT3	Wnt3	Wnt Signaling
+WNT3A	Wnt3a	Wnt Signaling
+WNT4	Wnt4	Wnt Signaling
+WNT5A	Wnt5a	Wnt Signaling
+WNT5B	Wnt5b	Wnt Signaling
+WNT6	Wnt6	Wnt Signaling
+WNT7A	Wnt7a	Wnt Signaling
+WNT7B	Wnt7b	Wnt Signaling
+WNT8A	Wnt8a	Wnt Signaling
+WNT8B	Wnt8b	Wnt Signaling
+WNT9A	Wnt9a	Wnt Signaling
+WNT9B	Wnt9b	Wnt Signaling
+ZEB1	Zeb1	EMT/Invasion
+ZEB2	Zeb2	EMT/Invasion
+ZNRF3	Znrf3	Wnt Signaling
