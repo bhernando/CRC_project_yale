@@ -46,7 +46,7 @@ pathway_groups = {
         "Ubr5", "Ctnnd2", "Ptprf", "Radil", "Dock2", "Dock3", "Dscaml1", "Nrg1", "Tpo", "Il16", "Rims2",
         "Cacna1d", "Srrm4", "Csmd2", "Csmd3", "Tut7", "Rrbp1"
     ],
-    "Dietlein 2020 CRC    ": [
+    "Dietlein 2020 CRC": [
         "Trp53", "Kras", "Apc", "Braf", "Pik3ca", "Arid1a", 
         "Pik3r1", "Nras", "Fbxw7", "Smad4", "Atm",
         "Erbb2", "Rbm10", "Erbb3", "Amer1", "Acvr2a",
