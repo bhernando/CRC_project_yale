@@ -1,0 +1,159 @@
+pathway	gene	human_genes
+DNA Repair / MMR	Mlh1	MLH1
+DNA Repair / MMR	Msh2	MSH2
+DNA Repair / MMR	Msh6	MSH6
+DNA Repair / MMR	Pms2	PMS2
+DNA Repair / MMR	Mutyh	MUTYH
+DNA Repair / MMR	Pole	POLE
+DNA Repair / MMR	Pold1	POLD1
+DNA Repair / MMR	Brca1	BRCA1
+DNA Repair / MMR	Brca2	BRCA2
+DNA Repair / MMR	Atm	ATM
+DNA Repair / MMR	Atr	ATR
+DNA Repair / MMR	Chek2	CHEK2
+TP53 Pathway	Trp53	TP53
+TP53 Pathway	Trp73	TP73
+TP53 Pathway	Trp63	TP63
+TP53 Pathway	Mdm2	MDM2
+TP53 Pathway	Mdm4	MDM4
+TP53 Pathway	Cdkn1a	CDKN1A
+TP53 Pathway	Cdkn2a	NA
+TP53 Pathway	Rb1	RB1
+TP53 Pathway	Bax	BAX
+TP53 Pathway	Bak1	BAK1
+TP53 Pathway	Bcl2	BCL2
+RAS/RAF/PI3K	Kras	KRAS
+RAS/RAF/PI3K	Braf	BRAF
+RAS/RAF/PI3K	Pik3ca	PIK3CA
+RAS/RAF/PI3K	Pten	PTEN
+RAS/RAF/PI3K	Akt1	AKT1
+RAS/RAF/PI3K	Akt2	AKT2
+RAS/RAF/PI3K	Mtor	MTOR
+RAS/RAF/PI3K	Nrg1	NRG1
+RAS/RAF/PI3K	Dock2	DOCK2
+RAS/RAF/PI3K	Spp1	SPP1
+TGF-beta / SMAD	Smad2	SMAD2
+TGF-beta / SMAD	Smad3	SMAD3
+TGF-beta / SMAD	Smad4	SMAD4
+TGF-beta / SMAD	Tgfbr2	TGFBR2
+Wnt Signaling	Apc	APC
+Wnt Signaling	Ctnnb1	CTNNB1
+Wnt Signaling	Axin1	AXIN1
+Wnt Signaling	Axin2	AXIN2
+Wnt Signaling	Rnf43	RNF43
+Wnt Signaling	Znrf3	ZNRF3
+Wnt Signaling	Lgr5	LGR5
+Wnt Signaling	Dkk1	DKK1
+Wnt Signaling	Dkk2	DKK2
+Wnt Signaling	Dkk3	DKK3
+Wnt Signaling	Dkk4	DKK4
+Wnt Signaling	Wnt1	WNT1
+Wnt Signaling	Wnt2	WNT2
+Wnt Signaling	Wnt2b	WNT2B
+Wnt Signaling	Wnt3	WNT3
+Wnt Signaling	Wnt3a	WNT3A
+Wnt Signaling	Wnt4	WNT4
+Wnt Signaling	Wnt5a	WNT5A
+Wnt Signaling	Wnt5b	WNT5B
+Wnt Signaling	Wnt6	WNT6
+Wnt Signaling	Wnt7a	WNT7A
+Wnt Signaling	Wnt7b	WNT7B
+Wnt Signaling	Wnt8a	WNT8A
+Wnt Signaling	Wnt8b	WNT8B
+Wnt Signaling	Wnt9a	WNT9A
+Wnt Signaling	Wnt9b	WNT9B
+Wnt Signaling	Wnt10a	WNT10A
+Wnt Signaling	Wnt10b	WNT10B
+Wnt Signaling	Wnt11	WNT11
+Wnt Signaling	Wnt16	WNT16
+Wnt Signaling	Fzd1	FZD1
+Wnt Signaling	Fzd2	FZD2
+Wnt Signaling	Fzd3	FZD3
+Wnt Signaling	Fzd4	FZD4
+Wnt Signaling	Fzd5	FZD5
+Wnt Signaling	Fzd6	FZD6
+Wnt Signaling	Fzd7	FZD7
+Wnt Signaling	Fzd8	FZD8
+Wnt Signaling	Fzd9	FZD9
+Wnt Signaling	Fzd10	FZD10
+Wnt Signaling	Lrp5	LRP5
+Wnt Signaling	Lrp6	LRP6
+Wnt Signaling	Gsk3b	GSK3B
+Wnt Signaling	Csnk1a1	CSNK1A1
+Wnt Signaling	Csnk1d	CSNK1D
+Wnt Signaling	Csnk1e	TPTEP2-CSNK1E
+Wnt Signaling	Tcf7	TCF7
+Wnt Signaling	Tcf7l1	TCF7L1
+Wnt Signaling	Tcf7l2	TCF7L2
+Wnt Signaling	Lef1	LEF1
+Wnt Signaling	Sfrp1	SFRP1
+Wnt Signaling	Sfrp2	SFRP2
+Wnt Signaling	Sfrp3	NA
+Wnt Signaling	Sfrp4	SFRP4
+Wnt Signaling	Sfrp5	SFRP5
+Wnt Signaling	Rspo1	RSPO1
+Wnt Signaling	Rspo2	RSPO2
+Wnt Signaling	Rspo3	RSPO3
+Wnt Signaling	Rspo4	RSPO4
+Wnt Signaling	Tnks	TNKS
+Wnt Signaling	Tnks2	TNKS2
+Wnt Signaling	Myc	MYC
+Wnt Signaling	Ccnd1	CCND1
+Wnt Signaling	Mmp7	MMP7
+Wnt Signaling	Cd44	CD44
+Wnt Signaling	Fbxw7	FBXW7
+Chromatin / Epigenetic	Arid1a	ARID1A
+Chromatin / Epigenetic	Ezh2	EZH2
+Chromatin / Epigenetic	Kmt2c	KMT2C
+Chromatin / Epigenetic	Kmt2d	KMT2D
+Chromatin / Epigenetic	Dnmt3a	DNMT3A
+RTK / Growth Signals	Erbb2	ERBB2
+RTK / Growth Signals	Met	MET
+RTK / Growth Signals	Fgfr1	FGFR1
+RTK / Growth Signals	Fgfr2	FGFR2
+Notch	Notch1	NOTCH1
+Notch	Notch2	NOTCH2
+Cell Cycle	Ccnd1	CCND1
+Cell Cycle	Cdk4	CDK4
+Cell Cycle	Cdk6	CDK6
+EMT / Invasion	Snai1	SNAI1
+EMT / Invasion	Snai2	SNAI2
+EMT / Invasion	Zeb1	ZEB1
+EMT / Invasion	Zeb2	ZEB2
+EMT / Invasion	Twist1	TWIST1
+EMT / Invasion	Cdh1	CDH1
+EMT / Invasion	Mmp9	MMP9
+EMT / Invasion	Cxcr4	CXCR4
+EMT / Invasion	S100a4	S100A4
+Metabolism	Idh1	IDH1
+Metabolism	Sdhb	SDHB
+Cytokine signalling	Il16	IL16
+Cytokine signalling	Il13ra1	IL13RA1
+Robles 2016	Trp53	TP53
+Robles 2016	Kras	KRAS
+Robles 2016	Smad4	SMAD4
+Robles 2016	Smad2	SMAD2
+Robles 2016	Sox9	SOX9
+Robles 2016	Pik3ca	PIK3CA
+Robles 2016	Mtor	MTOR
+Robles 2016	Prex2	PREX2
+Robles 2016	Apc	APC
+Robles 2016	Ep300	EP300
+Robles 2016	Trrap	TRRAP
+Robles 2016	Ubr5	UBR5
+Robles 2016	Ctnnd2	CTNND2
+Robles 2016	Ptprf	PTPRF
+Robles 2016	Radil	RADIL
+Robles 2016	Dock2	DOCK2
+Robles 2016	Dock3	DOCK3
+Robles 2016	Dscaml1	DSCAML1
+Robles 2016	Nrg1	NRG1
+Robles 2016	Tpo	TPO
+Robles 2016	Il16	IL16
+Robles 2016	Rims2	RIMS2
+Robles 2016	Cacna1d	CACNA1D
+Robles 2016	Srrm4	SRRM4
+Robles 2016	Csmd2	CSMD2
+Robles 2016	Csmd3	CSMD3
+Robles 2016	Tut7	TUT7
+Robles 2016	Rrbp1	RRBP1
