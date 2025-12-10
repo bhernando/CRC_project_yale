@@ -45,5 +45,17 @@ pathway_groups = {
         "Trp53", "Kras", "Smad4", "Smad2", "Sox9", "Pik3ca", "Mtor", "Prex2", "Apc", "Ep300", "Trrap",
         "Ubr5", "Ctnnd2", "Ptprf", "Radil", "Dock2", "Dock3", "Dscaml1", "Nrg1", "Tpo", "Il16", "Rims2",
         "Cacna1d", "Srrm4", "Csmd2", "Csmd3", "Tut7", "Rrbp1"
+    ],
+    "Dietlein 2020 CRC    ": [
+        "Trp53", "Kras", "Apc", "Braf", "Pik3ca", "Arid1a", 
+        "Pik3r1", "Nras", "Fbxw7", "Smad4", "Atm",
+        "Erbb2", "Rbm10", "Erbb3", "Amer1", "Acvr2a",
+        "H2-K1",                                            # mouse ortholog of human HLA-B (MHC class I)
+        "Sox9", "Elf3", "Cdc27", "Zc3h13",
+        "Zfp14",                                            # mouse zinc-finger ortholog of human ZNF14
+        "Rims1", "Prdm2", "Pcdh9", "Pcdha3", "Mcf2", 
+        "Tcf7l2", "Odf2l",
+        "Tnfrsf23",                                         # closest mouse analog (TRAIL receptor, no signaling); no direct ortholog for human TNFRSF10C
+        "Nbea"
     ]
 }
