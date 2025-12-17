@@ -1,4 +1,4 @@
-pathway	gene	human_genes
+pathway	gene	human_gene
 DNA Repair / MMR	Mlh1	MLH1
 DNA Repair / MMR	Msh2	MSH2
 DNA Repair / MMR	Msh6	MSH6
@@ -17,7 +17,7 @@ TP53 Pathway	Trp63	TP63
 TP53 Pathway	Mdm2	MDM2
 TP53 Pathway	Mdm4	MDM4
 TP53 Pathway	Cdkn1a	CDKN1A
-TP53 Pathway	Cdkn2a	NA
+TP53 Pathway	Cdkn2a	CDKN2A
 TP53 Pathway	Rb1	RB1
 TP53 Pathway	Bax	BAX
 TP53 Pathway	Bak1	BAK1
@@ -81,14 +81,14 @@ Wnt Signaling	Lrp6	LRP6
 Wnt Signaling	Gsk3b	GSK3B
 Wnt Signaling	Csnk1a1	CSNK1A1
 Wnt Signaling	Csnk1d	CSNK1D
-Wnt Signaling	Csnk1e	TPTEP2-CSNK1E
+Wnt Signaling	Csnk1e	CSNK1E
 Wnt Signaling	Tcf7	TCF7
 Wnt Signaling	Tcf7l1	TCF7L1
 Wnt Signaling	Tcf7l2	TCF7L2
 Wnt Signaling	Lef1	LEF1
 Wnt Signaling	Sfrp1	SFRP1
 Wnt Signaling	Sfrp2	SFRP2
-Wnt Signaling	Sfrp3	NA
+Wnt Signaling	Sfrp3	FRZB
 Wnt Signaling	Sfrp4	SFRP4
 Wnt Signaling	Sfrp5	SFRP5
 Wnt Signaling	Rspo1	RSPO1
@@ -157,3 +157,34 @@ Robles 2016	Csmd2	CSMD2
 Robles 2016	Csmd3	CSMD3
 Robles 2016	Tut7	TUT7
 Robles 2016	Rrbp1	RRBP1
+Dietlein 2020 CRC	Trp53	TP53
+Dietlein 2020 CRC	Kras	KRAS
+Dietlein 2020 CRC	Apc	APC
+Dietlein 2020 CRC	Braf	BRAF
+Dietlein 2020 CRC	Pik3ca	PIK3CA
+Dietlein 2020 CRC	Arid1a	ARID1A
+Dietlein 2020 CRC	Pik3r1	PIK3R1
+Dietlein 2020 CRC	Nras	NRAS
+Dietlein 2020 CRC	Fbxw7	FBXW7
+Dietlein 2020 CRC	Smad4	SMAD4
+Dietlein 2020 CRC	Atm	ATM
+Dietlein 2020 CRC	Erbb2	ERBB2
+Dietlein 2020 CRC	Rbm10	RBM10
+Dietlein 2020 CRC	Erbb3	ERBB3
+Dietlein 2020 CRC	Amer1	AMER1
+Dietlein 2020 CRC	Acvr2a	ACVR2A
+Dietlein 2020 CRC	H2-K1	HLA-B
+Dietlein 2020 CRC	Sox9	SOX9
+Dietlein 2020 CRC	Elf3	ELF3
+Dietlein 2020 CRC	Cdc27	CDC27
+Dietlein 2020 CRC	Zc3h13	ZC3H13
+Dietlein 2020 CRC	Zfp14	ZNF14
+Dietlein 2020 CRC	Rims1	RIMS1
+Dietlein 2020 CRC	Prdm2	PRDM2
+Dietlein 2020 CRC	Pcdh9	PCDH9
+Dietlein 2020 CRC	Pcdha3	PCDHA3
+Dietlein 2020 CRC	Mcf2	MCF2
+Dietlein 2020 CRC	Tcf7l2	TCF7L2
+Dietlein 2020 CRC	Odf2l	ODF2L
+Dietlein 2020 CRC	Tnfrsf23	TNFRSF10C
+Dietlein 2020 CRC	Nbea	NBEA

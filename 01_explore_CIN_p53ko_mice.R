@@ -203,6 +203,7 @@ AlBakir.profiles=as.data.frame(do.call(rbind,lapply(1:length(AlBakir.data),funct
 
 # Genes of interest
 favourite_genes=fread(file.path(BASE,"data/gene_names_pathways.txt"))
+interest_genes=fread(file.path(BASE,"data/genes_of_interest_Dietlein2020.txt"))
 
 # Chrom sizes 
 mmd10_chr_sizes=fread(file.path(BASE,"data/mm10.chrom.sizes.txt"))
@@ -342,15 +343,15 @@ dfCN.genes = as.data.frame(do.call(rbind,lapply(1:length(gene.locations$gene_nam
 })))
 colnames(dfCN.genes)=c("gene_name","sample","cnval")
 dfCN.genes$cnval=as.numeric(dfCN.genes$cnval)
-write.table(dfCN.genes, file.path(BASE,"01_cnValues_per_genes_antonia_p53KOmice.txt"), quote=F, sep="\t", col.names = T, row.names = F)
+write.table(dfCN.genes, file.path(OUTPUT_DIR,"01_cnValues_per_genes_antonia_p53KOmice.txt"), quote=F, sep="\t", col.names = T, row.names = F)
 
 # Prevalence per gene
-dfCN.genes=fread(file.path(BASE,"01_cnValues_per_genes_antonia_p53KOmice.txt"))
+dfCN.genes=fread(file.path(OUTPUT_DIR,"01_cnValues_per_genes_antonia_p53KOmice.txt"))
 dfCN.genes=dfCN.genes[dfCN.genes$cnval <= -1 | dfCN.genes$cnval >= 1,] #remove no significant changes 
 dfGoI=dfCN.genes[dfCN.genes$gene_name%in%favourite_genes$gene,]
 
-# I classify alterations as gains (>+1 rel copies), amps (> +2 rel copies), losses (-1 rel copy), deletions (< -2 copies)
-dfGoI$status=ifelse(dfGoI$cnval>=1 & dfGoI$cnval<2, "Gain", ifelse(dfGoI$cnval>=2, "Amplification",ifelse(dfGoI$cnval<log2(0.5/2), "Deletion", "Loss")))
+# I classify alterations as gains (> +1 copies), amps (> +4 copies), losses (< -1 copy), deletions (0 copies)
+dfGoI$status=ifelse(dfGoI$cnval>=log2(3/2) & dfGoI$cnval<log2(6/2), "Gain", ifelse(dfGoI$cnval>=log2(6/2), "Amplification",ifelse(dfGoI$cnval<log2(0.5/2), "Deletion", "Loss")))
 dfGoI$status=factor(dfGoI$status, levels = c("Deletion","Loss","Gain","Amplification"))
 dfGoI=dfGoI[order(dfGoI$gene_name),]
 dfGoI$gene_name=factor(dfGoI$gene_name, levels = unique(dfGoI$gene_name))
@@ -358,7 +359,7 @@ dfGoI$gene_name=factor(dfGoI$gene_name, levels = unique(dfGoI$gene_name))
 dfGoI.stats=as.data.frame(dfGoI%>%group_by(gene_name,status, .drop=F)%>%summarise(n=n()))
 dfGoI.stats$freq=dfGoI.stats$n/length(unique(CNVprofiles$sample))
 
-
+# Plot prevalence
 palette=c("#3da9cd", "#a9d9e9", "#ff7272", "#fb0000")
 names(palette)=c("Deletion","Loss","Gain","Amplification")
 
@@ -373,10 +374,12 @@ p = ggplot(dfGoI.stats,aes(x=gene_name,y=n,fill=status))+
           legend.position = "bottom", legend.title = element_blank())
 print(p)
 dev.off()
+write.table(dfGoI, paste0(OUTPUT_DIR,"/favourite_genes_CNAs_per_sample.tsv"), sep = "\t", quote = F, col.names = T, row.names = F)
+
 
 
 ## Pathway analyses => enrichment over background genes
-dfCN.genes=fread(file.path(BASE,"01_cnValues_per_genes_antonia_p53KOmice.txt"))
+dfCN.genes=fread(file.path(OUTPUT_DIR,"01_cnValues_per_genes_antonia_p53KOmice.txt"))
 dfCN.genes$hit=0
 dfCN.genes$hit[dfCN.genes$cnval <= -1 | dfCN.genes$cnval >= 1]=1 #remove no significant changes 
 
@@ -420,7 +423,7 @@ path_enrich$fisher.padj <- p.adjust(path_enrich$fisher.pval, method="BH")
 
 
 ## Gene enrichment analyses => enrichment over other favourite genes
-dfCN.genes=fread(file.path(BASE,"01_cnValues_per_genes_antonia_p53KOmice.txt"))
+dfCN.genes=fread(file.path(OUTPUT_DIR,"01_cnValues_per_genes_antonia_p53KOmice.txt"))
 dfCN.genes$hit=0
 dfCN.genes$hit[dfCN.genes$cnval <= -1 | dfCN.genes$cnval >= 1]=1 #remove no significant changes 
 # dfCN.genes=dfCN.genes[dfCN.genes$gene_name%in%favourite_genes$gene,]
@@ -433,7 +436,7 @@ matHits_freq=rowSums(matHits) / ncol(matHits)   #frequency 0–1
 
 genes_bg=names(matHits_freq)[!names(matHits_freq)%in%favourite_genes$gene]
 genes=unique(favourite_genes$gene)
-genes=genes[!genes%in%c("Sfrp3","Il13ra1")]
+genes=genes[!genes%in%c("Sfrp3","Il13ra1","Rbm10","Amer1","Pcdha3","Mcf2")] #no altered in any sample
 gene_enrich=as.data.frame(do.call(rbind,lapply(genes, function(thisGene) {
     print(thisGene)
     # genes_bg=genes[genes!=thisGene]
@@ -544,7 +547,7 @@ plotHeatmap(cntable = AlBakir.segTabs.abs[AlBakir.segTabs.abs$sample%in%dtCNAs$s
 dtCNAs$sample.id=sub(".*\\.", "", dtCNAs$sample)
 dtCNAs$progression=AlBakir.metadata$Progression[match(dtCNAs$sample.id,AlBakir.metadata$Sample)]
 
-png(file=paste0(PLOTS_DIR, "/BoxPlot_nCNAs_AlBakir2025.png"), width = 60/25.4, height = 60/25.4, units = "in", res = 300)
+pdf(file=paste0(PLOTS_DIR, "/BoxPlot_nCNAs_AlBakir2025.pdf"), width = 60/25.4, height = 60/25.4)
 p=ggplot(dtCNAs[!is.na(dtCNAs$progression),], aes(x = progression, y = nCNAs)) +
     geom_boxplot(outlier.shape = NA) +
     geom_point(color = "black", fill = "black", pch = 21, position = position_jitter(0.2), alpha = 0.8) +
@@ -568,7 +571,7 @@ wgii$sample.id=sub(".*\\.", "", wgii$sample)
 wgii$progression=AlBakir.metadata$Progression[match(wgii$sample.id,AlBakir.metadata$Sample)]
 
 
-png(file=paste0(PLOTS_DIR, "/BoxPlot_FGA_AlBakir2025.png"), width = 80/25.4, height = 60/25.4, units = "in", res = 300)
+pdf(file=paste0(PLOTS_DIR, "/BoxPlot_FGA_AlBakir2025.pdf"), width = 60/25.4, height = 60/25.4)
 p=ggplot(wgii[!is.na(wgii$progression),], aes(x = progression, y = wgii)) + 
     geom_boxplot(outlier.shape = NA) +
     geom_point(color = "black", fill = "black", pch = 21, position = position_jitter(0.2), alpha = 1) +
@@ -594,7 +597,7 @@ mart <- useEnsembl(biomart = "genes", dataset = "hsapiens_gene_ensembl", GRCh = 
 GoI.locations <- getBM(
     attributes = c("hgnc_symbol", "chromosome_name", "start_position", "end_position", "strand"),
     filters = "hgnc_symbol",
-    values = favourite_genes$human_name,
+    values = favourite_genes$human_gene,
     mart = mart
 )
 colnames(GoI.locations)=c("gene_name","chromosome","start","end","strand")
@@ -620,11 +623,14 @@ colnames(dfCN.genes)=c("gene_name","sample","cnval")
 dfCN.genes$cnval=as.numeric(dfCN.genes$cnval)
 
 
-# Prevalence per gene
+# Prevalence per gene => overall cohort
 # We are going to follow the same criteria for classifying alterations... but we don't know the ploidy (3/4 copies), amps (>4 copies), losses (1 copy), deletions (0 copies)
-dfGoI=dfCN.genes[dfCN.genes$cnval!=2,] #remove no different from ploidy
-dfGoI$status=ifelse(dfGoI$cnval>2 & dfGoI$cnval<5, "Gain", ifelse(dfGoI$cnval>=5, "Amplification",ifelse(dfGoI$cnval<=0, "Deletion", "Loss")))
+# I classify alterations as gains (>+1 rel copies), amps (> +2 rel copies), losses (-1 rel copy), deletions (< -2 copies)
+dfGoI=dfCN.genes[dfCN.genes$cnval<= log2(1/2) | dfCN.genes$cnval>=log2(3/2),] #remove subclonal copy number changes with <1-copy change
+dfGoI$status=ifelse(dfGoI$cnval>=log2(3/2) & dfGoI$cnval<log2(6/2), "Gain", ifelse(dfGoI$cnval>=log2(6/2), "Amplification",ifelse(dfGoI$cnval<log2(0.5/2), "Deletion", "Loss")))
 dfGoI$status=factor(dfGoI$status, levels = c("Deletion","Loss","Gain","Amplification"))
+dfGoI=dfGoI[order(dfGoI$gene_name),]
+dfGoI$gene_name=factor(dfGoI$gene_name, levels = unique(dfGoI$gene_name))
 
 dfGoI.stats=as.data.frame(dfGoI%>%group_by(gene_name,status, .drop=F)%>%summarise(n=n()))
 dfGoI.stats$freq=dfGoI.stats$n/length(unique(CNVprofiles$sample))
@@ -644,3 +650,25 @@ p = ggplot(dfGoI.stats,aes(x=gene_name,y=n,fill=status))+
 print(p)
 dev.off()
 
+
+dfGoI$sample.id=sub(".*\\.", "", dfGoI$sample)
+dfGoI$progression=AlBakir.metadata$Progression[match(dfGoI$sample.id,AlBakir.metadata$Sample)]
+dfGoI=dfGoI[!is.na(dfGoI$progression),]
+dfGoI.stats=as.data.frame(dfGoI%>%group_by(progression,gene_name,status, .drop=F)%>%summarise(n=n()))
+
+palette=c("#799FCB","#AFC7D0", "#FEC9C9", "#F9665E")
+names(palette)=c("Deletion","Loss","Gain","Amplification")
+
+png(file=paste0(PLOTS_DIR, "/BarPlot_GoI_frequency_Progression_AlBakir2025.png"), width = 250/25.4, height = 120/25.4, units = "in", res = 300)
+p = ggplot(dfGoI.stats,aes(x=gene_name,y=n,fill=status))+
+    facet_wrap(~progression,ncol=1)+
+    geom_bar(stat = "identity")+
+    scale_fill_manual(values = palette) +
+    labs(subtitle = "Al Bakir 2025",
+         x = "Gene of interest", y = "Number of samples") +
+    theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5),
+          axis.text.y = element_text(size = 6),
+          legend.position = "bottom", legend.title = element_blank())
+print(p)
+dev.off()
+write.table(dfGoI, paste0(OUTPUT_DIR,"/favourite_genes_CNAs_per_sample_AlBakir2025.tsv"), sep = "\t", quote = F, col.names = T, row.names = F)
