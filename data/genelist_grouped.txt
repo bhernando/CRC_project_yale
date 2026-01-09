@@ -1,6 +1,6 @@
 pathway_groups = {
     "DNA Repair / MMR": [
-        "Mlh1", "Msh2", "Msh6", "Pms2", "Mutyh", "Pole", "Pold1", "Brca1", "Brca2", "Atm", "Atr", "Chek2"
+        "Mlh1", "Msh2", "Msh3", "Msh6", "Pms2", "Mutyh", "Pole", "Pold1", "Brca1", "Brca2", "Atm", "Atr", "Chek2"
     ],
     "TP53 Pathway": [
         "Trp53", "Trp73", "Trp63", "Mdm2", "Mdm4", "Cdkn1a", "Cdkn2a", "Rb1", "Bax", "Bak1", "Bcl2"

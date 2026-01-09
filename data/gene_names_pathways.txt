@@ -1,6 +1,7 @@
 pathway	gene	human_gene
 DNA Repair / MMR	Mlh1	MLH1
 DNA Repair / MMR	Msh2	MSH2
+DNA Repair / MMR	Msh3	MSH3
 DNA Repair / MMR	Msh6	MSH6
 DNA Repair / MMR	Pms2	PMS2
 DNA Repair / MMR	Mutyh	MUTYH
